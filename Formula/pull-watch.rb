@@ -5,21 +5,21 @@
 class PullWatch < Formula
   desc "A tool that watches a git repository for changes and runs a specified command"
   homepage "https://github.com/ship-digital/pull-watch"
-  version "1.7.9"
+  version "1.7.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.9/pull-watch_Darwin_x86_64.tar.gz"
-      sha256 "5197c9e579ae5a7a7305a7133716b0f0989a0c5ef86c83680971195adede6d4d"
+      url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.10/pull-watch_Darwin_x86_64.tar.gz"
+      sha256 "e217fcdb833c999ab97b855f6ba1b821285431cb3fec3e355515e54b184b861d"
 
       def install
         bin.install "pull-watch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.9/pull-watch_Darwin_arm64.tar.gz"
-      sha256 "e6a46de4862fe16fbf3210f55e910310170293d7d8053cbe7c8c0f7b1136ab5b"
+      url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.10/pull-watch_Darwin_arm64.tar.gz"
+      sha256 "7c99b1242dcab84d567324b3daa88dd3d1e50b21a33215391ddedfca0c87c70b"
 
       def install
         bin.install "pull-watch"
@@ -30,8 +30,8 @@ class PullWatch < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.9/pull-watch_Linux_x86_64.tar.gz"
-        sha256 "1d8d90bc38fd45f855fe2bf1a23519ea51fe6c8ced9a36840bca630eb4ddf25c"
+        url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.10/pull-watch_Linux_x86_64.tar.gz"
+        sha256 "878a710985b73f98e683cbc9cda27052d0381309ad3e793814827428da18382e"
 
         def install
           bin.install "pull-watch"
@@ -40,8 +40,8 @@ class PullWatch < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.9/pull-watch_Linux_arm64.tar.gz"
-        sha256 "6ac9b9bec1021b317ed0267a6c6eadb03c45e7d954f9c47d4b8bb1a4a9258b77"
+        url "https://github.com/ship-digital/pull-watch/releases/download/v1.7.10/pull-watch_Linux_arm64.tar.gz"
+        sha256 "f28d0d80eb3518fc2e83487f7c00483c41a2ac84802f0e411435100a8ddbc8c0"
 
         def install
           bin.install "pull-watch"
